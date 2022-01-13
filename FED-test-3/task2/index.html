@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="js/activity.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="mt-5">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <button id="addCustTab" class="nav-link active">Add Customer</button>
+                </li>
+                <li class="nav-item">
+                  <button id="tableTab" class="nav-link">Table</button>
+                </li>
+              </ul>
+        </div> -->
+        <div class="page1-data-entry">
+            <!-- <button class="btn btn-success showListToggle">ShowList</button> -->
+            <div class="card mt-5 data-entry-card">
+                <label for="customerId" class="pl-2 pt-2">Customer Name:</label>
+                <input type="text" class="ml-4 mr-4" id="customerId" placeholder="Enter the name">
+                <label for="Number Of Starts" class="pl-2 pt-2">Number Of Starts (1 to 5):</label>
+                <input type="number" class="ml-4 mr-4" id="numofstars" placeholder="Enter Number of Stars">
+                <button class="btn btn-info mt-3" id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="page2-show-list mt-5">
+            <table class="table table-striped table-hover table-bordered">
+                <tr class="thead-dark">
+                    <th>Server 1</th>
+                    <th>Server 2</th>
+                    <th>Server 3</th>
+                    <th>Server 4</th>
+                    <th>Server 5</th>
+                    <th>Server 6</th>
+                    <th>Server 7</th>
+                    <th>Server 8</th>
+                    <th>Server 9</th>
+                    <th>Server 10</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            let obj = new Activity();
+            obj.init();
+        })
+    </script>
+</body>
+</html>

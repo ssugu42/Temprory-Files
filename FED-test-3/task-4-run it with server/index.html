@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="lib/canvasjs.min.js"></script>
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/4599a4d7ed083a99742275a355b0778c/map_load?v=1.5"></script>
+</head>
+<body>
+    <div class="PreLoader">
+        <div style="position: absolute;top: 50%; left: 50%;">
+            <h3 style="text-align: center;">Loading...</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="pieChart mt-2 d-flex justify-content-center" id="pieChart" ></div>
+        <div class="barChart mt-5 " id="barChart"></div>
+    </div>
+    <h1 class="mt-5">Map API</h1>
+    <div class="mapPlot container-fluid" id="mapContainer"></div>
+    <script>
+        $(function(){
+            let obj = new Activity();
+            obj.init();
+        })
+    </script>
+</body>
+</html>

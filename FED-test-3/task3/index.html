@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="lib/canvasjs.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="stafSelect">
+            <select id="staf">
+                <option value="0">Staf 1</option>
+                <option value="1">Staf 2</option>
+                <option value="2">Staf 3</option>
+                <option value="2">Staf 4</option>
+            </select>
+        </div>
+        <div class="daySelect">
+            <select id="days">
+                <option value="0">Monday</option>
+                <option value="1">Tuesday</option>
+                <option value="2">Wednesday</option>
+                <option value="3">Thusday</option>
+                <option value="4">Friday</option>
+            </select>
+        </div>
+
+        <div class="chartContainer mt-5" id="chartCont" style="width: 1000px;">
+
+        </div>
+    </div>
+    <script>
+        $(function(){
+            let obj = new Activity();
+            obj.init();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    font-weight: bold;
+}
+
+.data-entry-card{
+    width: 350px;
+    margin: 0 auto;
+}
+
+#addCustTab, #tableTab{
+    outline: none;
+    cursor: pointer;
+}
